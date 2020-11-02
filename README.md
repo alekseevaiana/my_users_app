@@ -1,8 +1,11 @@
 # my_users_app
 
-- User class stored in <u>my_user_model.rb</u> file <br>
-- To run the server and create data base use <u>app.rb</u>
-- In the project I used Sinatra
+- install:      
+    `gem install sinatra`   
+    `gem install sqlite3`
+- to run the server and create data base:    
+    `ruby app.rb`
+- User class stored in <u>my_user_model.rb</u> file  
 
 ## Curl requests.
 
@@ -13,7 +16,7 @@ curl -X POST -i http://localhost:8080/users -d "firstname=Emma" -d "lastname=Joe
 curl http://localhost:8080/users
 
 ### POST on /sign_in
-curl -X POST -i -c cookies.txt http://localhost:8080/sign_in -d "email=joe@gmail.com" -d "password=123456ue4"
+curl -X POST -i -c cookies.txt http://localhost:8080/sign_in -d "email=joe@gmail.com" -d "password=123456ue4"  
 curl -X POST -i -c cookies.txt http://localhost:8080/sign_in -d "email=hello@gmail.com" -d "password=12345"
 
 ### PUT on /users for changing password
